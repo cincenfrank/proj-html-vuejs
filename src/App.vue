@@ -1,14 +1,16 @@
 <template>
   <div id="app">
     <HeaderComponent :headerData="pageData.header"></HeaderComponent>
+    <MainComponent :mainObject="pageData.main"></MainComponent>
   </div>
 </template>
 
 <script>
 import HeaderComponent from "./components/HeaderComponent.vue";
+import MainComponent from "./components/MainComponent.vue";
 export default {
   name: "App",
-  components: { HeaderComponent },
+  components: { HeaderComponent, MainComponent },
   data() {
     return {
       pageData: {
@@ -45,25 +47,25 @@ export default {
                 title: "statistical consulting",
                 description:
                   "When, while lovely valley teems with vapour around meridian sun strikes the upper impenetrable foliage of my trees and but a",
-                icon: "",
+                icon: "fa-chart-line",
               },
               {
                 title: "digital consulting",
                 description:
                   "When, while lovely valley teems with vapour around meridian sun strikes the upper impenetrable foliage of my trees and but a",
-                icon: "",
+                icon: "fa-bullhorn",
               },
               {
                 title: "banking consulting",
                 description:
                   "When, while lovely valley teems with vapour around meridian sun strikes the upper impenetrable foliage of my trees and but a",
-                icon: "",
+                icon: "fa-wallet",
               },
               {
                 title: "enterprise consulting",
                 description:
                   "When, while lovely valley teems with vapour around meridian sun strikes the upper impenetrable foliage of my trees and but a",
-                icon: "",
+                icon: "fa-bullseye",
               },
             ],
           },
