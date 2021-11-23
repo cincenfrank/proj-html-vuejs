@@ -19,10 +19,13 @@ export default {
 header {
   background-color: black;
   background-image: url("../assets/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg");
-  background-size: 66%;
+  // background-image: url("../assets/business-people-working-together-on-project-and-5FHSKBL.jpg");
+  background-size: 66% 100%;
   background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: top;
+  background-position: right top;
+  // background-attachment: fixed;
+  // back
+  // background-size: cover;
   //   padding: 10px;
 }
 </style>
