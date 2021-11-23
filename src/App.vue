@@ -69,6 +69,18 @@ export default {
               },
             ],
           },
+          aboutUsBlock: {
+            contextTitle: "about us",
+            title: "we make your strategy work",
+            description:
+              "When, while lovely valley teems with vapour around meridian sun strikes the upper impenetrable foliage of my trees and but a thousand unknown are noticed when I hear the buzz of the little world among the stalks, and grow familiar indescribable forms of the insects. And flies, then I feel the presence of Almighty",
+            callToAction: {
+              text: "we help to deliver the business case",
+              description:
+                "When, while lovely valley teems with vapour around meridian sun strikes the upper impenetrable foliage of my trees and but a thousand unknown",
+              button: { text: "get started", href: "#" },
+            },
+          },
         },
       },
     };
