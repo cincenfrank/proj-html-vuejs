@@ -8,7 +8,10 @@
           :text="jumboObject.mainTitle"
         ></TitleComponent>
         <div class="d-flex gap-4">
-          <ButtonComponent :text="jumboObject.button.text"></ButtonComponent>
+          <ButtonComponent
+            :text="jumboObject.button.text"
+            :href="jumboObject.button.href"
+          ></ButtonComponent>
           <PlayButton class=""></PlayButton>
         </div>
       </div>

@@ -17,7 +17,7 @@
       </div>
     </section>
     <div class="call-to-action">
-      <div class="call-to-action-content container">
+      <div class="call-to-action-content container p-0">
         <div class="row justify-content-evenly">
           <div class="col-3">
             <TitleComponent
@@ -31,9 +31,11 @@
             </p>
           </div>
         </div>
+
         <ButtonComponent
-          class=""
+          class="flex-grow-0"
           :text="aboutUsObject.callToAction.button.text"
+          :href="aboutUsObject.callToAction.button.href"
         ></ButtonComponent>
       </div>
     </div>
