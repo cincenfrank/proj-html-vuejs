@@ -35,11 +35,13 @@ export default {
   img {
     object-fit: contain;
     width: 100%;
+    transition: all 0.3s 0.3s;
   }
   .slider-card-overlay {
     opacity: 0;
     color: white;
     padding: 0 30px;
+    transition: all 0.3s;
     .slider-card-title {
       font-weight: bold;
       text-transform: capitalize;
@@ -57,9 +59,11 @@ export default {
     img {
       filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg)
         saturate(600%) contrast(0.8);
+      transition: all 0.3s;
     }
     .slider-card-overlay {
       opacity: 1;
+      transition: all 0.3s 0.3s;
     }
   }
 }

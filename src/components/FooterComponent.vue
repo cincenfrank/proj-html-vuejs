@@ -39,6 +39,9 @@ export default {
   a {
     color: $secondary-color;
     text-decoration: none;
+    &:hover {
+      color: white;
+    }
   }
   .footer-divider {
     width: 100%;

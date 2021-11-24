@@ -64,7 +64,7 @@ export default {
   // background-color: black;
   //   background-image: url("../assets/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg");
   background-image: url("../assets/business-people-working-together-on-project-and-5FHSKBL.jpg");
-  background-size: 55% auto;
+  background-size: 55% 100%;
   background-repeat: no-repeat;
   background-position: left top;
 

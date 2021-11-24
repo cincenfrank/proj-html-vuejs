@@ -20,5 +20,10 @@ export default {
   font-size: 12px;
   letter-spacing: 2px;
   padding: 15px 30px;
+  border: 3px solid transparent;
+  animation: all 0.3s;
+  &:hover {
+    border: 3px solid $bg-dark;
+  }
 }
 </style>

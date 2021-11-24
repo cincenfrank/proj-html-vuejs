@@ -41,6 +41,7 @@ export default {
     width: 100%;
   }
   .text-block {
+    cursor: pointer;
     position: absolute;
     transform: translateY(30%);
     width: 75%;

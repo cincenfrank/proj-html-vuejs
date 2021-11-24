@@ -50,6 +50,11 @@ export default {
       text-decoration: none;
       color: $secondary-color;
     }
+    &:hover {
+      a {
+        color: white;
+      }
+    }
   }
   .social-item {
     padding: 10px;

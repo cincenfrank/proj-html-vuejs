@@ -31,6 +31,7 @@ export default {
   img {
     opacity: 0;
     width: 100%;
+    transition: all 0.5s;
   }
 
   .text-block {
@@ -40,6 +41,7 @@ export default {
     left: 0;
     right: 0;
     padding: 0 50px;
+    transition: all 0.3s;
     text-align: left;
     // object-fit: cover;
 

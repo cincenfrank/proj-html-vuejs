@@ -14,6 +14,7 @@ export default {};
   padding: 10px;
   border-radius: 50%;
   display: inline-block;
+  cursor: pointer;
   .play {
     border-top: 7px solid transparent;
     border-bottom: 7px solid transparent;
