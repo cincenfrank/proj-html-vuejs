@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
     <div class="container">
       <a class="navbar-brand" :href="navbarObject.logo.href">
         <img
@@ -17,20 +17,20 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        x
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav gap-2">
           <li
             class="nav-item"
             v-for="(link, i) in navbarObject.links"
             :key="i + 'nav-link'"
           >
             <NavbarLink
-              isActive="false"
+              :isActive="activeLinkIndex === i"
               :href="link.href"
               :text="link.text"
+              @linkClicked="onLinkClicked(i)"
             ></NavbarLink>
           </li>
         </ul>
@@ -45,8 +45,21 @@ export default {
   components: { NavbarLink },
   name: "Navbar",
   props: { navbarObject: Object },
+  data() {
+    return {
+      activeLinkIndex: 0,
+    };
+  },
+  methods: {
+    onLinkClicked(newIndex) {
+      this.activeLinkIndex = newIndex;
+    },
+  },
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+.custom-navbar {
+  padding: 0;
+}
 </style>

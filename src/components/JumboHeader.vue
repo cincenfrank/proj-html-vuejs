@@ -7,7 +7,7 @@
           :priority="1"
           :text="jumboObject.mainTitle"
         ></TitleComponent>
-        <div class="d-flex gap-4">
+        <div class="d-flex gap-4 align-items-center">
           <ButtonComponent
             :text="jumboObject.button.text"
             :href="jumboObject.button.href"

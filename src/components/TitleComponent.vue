@@ -16,12 +16,14 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 .title {
   text-transform: uppercase;
-}
-.main {
-  font-size: 80px;
-  color: white;
+  text-align: left;
+  font-weight: bold;
+  &.main {
+    font-size: 80px;
+    color: white;
+  }
 }
 </style>

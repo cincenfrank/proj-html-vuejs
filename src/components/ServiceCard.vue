@@ -5,7 +5,7 @@
     </div>
     <section class="service-card-text-section">
       <TitleComponent :priority="5" :text="title"></TitleComponent>
-      <p>{{ description }}</p>
+      <p class="service-card-description">{{ description }}</p>
     </section>
   </div>
 </template>
@@ -20,14 +20,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/variables.scss";
 i {
-  font-size: 35px;
+  font-size: 20px;
   color: white;
-  background-color: red;
-  padding: 10px;
+  background-color: $primary-color;
+  padding: 15px;
   border-radius: 50%;
 }
 .service-card-text-section {
-  padding: 0 35px;
+  padding: 0 30px;
+  text-align: left;
+  .service-card-description {
+    font-size: 12px;
+    padding: 10px 0 0;
+    color: $secondary-color;
+  }
 }
 </style>

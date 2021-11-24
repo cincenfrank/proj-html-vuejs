@@ -16,11 +16,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// @import "@/styles/variables.scss";
+
 header {
-  background-color: black;
+  // background-color: $bg-dark;
   background-image: url("../assets/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg");
   // background-image: url("../assets/business-people-working-together-on-project-and-5FHSKBL.jpg");
-  background-size: 66% 100%;
+  background-size: 66% auto;
   background-repeat: no-repeat;
   background-position: right top;
   // background-attachment: fixed;
