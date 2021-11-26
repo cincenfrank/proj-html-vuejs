@@ -3,6 +3,21 @@
     <HeaderComponent :headerData="pageData.header"></HeaderComponent>
     <MainComponent :mainObject="pageData.main"></MainComponent>
     <FooterComponent :footerObject="pageData.footer"></FooterComponent>
+    <div
+      class="
+        chat-icon
+        bg-info
+        p-3
+        rounded-circle
+        d-inline-block
+        position-fixed
+        bottom-0
+        end-0
+        m-5
+      "
+    >
+      <i class="far fa-comment"></i>
+    </div>
   </div>
 </template>
 
@@ -240,5 +255,11 @@ export default {
   color: #2c3e50;
   background-color: $bg-dark;
   // margin-top: 60px;
+
+  .chat-icon {
+    cursor: pointer;
+    &:hover {
+    }
+  }
 }
 </style>
